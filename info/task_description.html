@@ -1,0 +1,55 @@
+<!-- Describe task in general -->
+
+<p>
+    Your friend loves chess very much but he isn't a strong player. You could help him by using your programming skills.
+</p>
+
+<p>
+    Your task is to write a function which can find all checkerboard cells on which Knight could go for. The input data will be start cell and the amount of moves that Knight will make. Board is absolutely empty except this one figure - your Knight.<br>
+If one cell appears more than 1 time - you should count it as much times as it appears.
+You should return all possible cells in the list and sort them by the next rules:
+in alphabetical order (from 'a' to 'h') and in ascending order (from 'a1' to 'a8' and so on).
+</p>
+
+<p style="text-align: center;">
+    <img  title="Chess Knight" src="{{MEDIA}}knight.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Start cell, number of moves.
+</p>
+
+<p>
+    <strong>Output: </strong> List of all possible cells. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">chessKnight('a1', 1) == ['b3', 'c2']
+chessKnight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+</pre>
+{% else %}
+<pre class="brush: python">chess_knight('a1', 1) == ['b3', 'c2']
+chess_knight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For game analysis and bot (game AI) development.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    1 <= the number of moves <= 2<br>
+</p>

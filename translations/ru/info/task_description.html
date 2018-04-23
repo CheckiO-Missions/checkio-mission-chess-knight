@@ -1,0 +1,53 @@
+<!-- Describe task in general -->
+
+<p>
+    Ваш друг очень любит шахматы, но он в них не силен. Вы можете помочь ему, используя свои навыки в программировании.
+</p>
+
+<p>
+Ваша задача написать функцию, которая будет составлять список всех клеток шахматной доски, на которые может пойти конь. Исходными данными будут - стартовая клетка и количество ходов, которые сделает конь. Кроме него других фигур на доске нет - поле полностью в вашем распоряжении.<br>
+Если какая-то клетка может быть посещена несколько раз - вы должны записать её в ответ столько раз, сколько она может быть посещена. Полученный список необходимо отсортировать согласно следующим правилам: в алфавитном порядке (от 'a' до 'h') и в порядке возрастания цифр (с 'a1' до 'a8' и так далее).
+</p>
+
+<p style="text-align: center;">
+    <img  title="Chess Knight" src="{{MEDIA}}knight.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Стартовая клетка, количество ходов.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Список всех возможных клеток, на которые может походить конь. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Пример:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">chessKnight('a1', 1) == ['b3', 'c2']
+chessKnight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+</pre>
+{% else %}
+<pre class="brush: python">chess_knight('a1', 1) == ['b3', 'c2']
+chess_knight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Для анализа партий и разработки ботов (игрового "искуственного интеллекта").
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Преудсловия</strong>:<br>
+    1 <= количество ходов <= 2<br>
+</p>

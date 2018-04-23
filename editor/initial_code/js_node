@@ -1,0 +1,17 @@
+"use strict";
+
+function chessKnight(start, moves) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(chessKnight('a1', 1))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.deepEqual(chessKnight('a1', 1), ['b3', 'c2'])
+    assert.deepEqual(chessKnight('h8', 2), ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8'])
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
