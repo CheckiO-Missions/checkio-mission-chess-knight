@@ -1,12 +1,13 @@
 <!-- Describe task in general -->
 
 <p>
-    Your friend loves chess very much but he isn't a strong player. You could help him by using your programming skills.
+    Your friend loves chess very much but he isn't a strong player. You could help him by using your programming skills.<br>
+If this mission is too simple for you, try another one from this set - <a href='https://py.checkio.org/en/mission/shortest-knight-path/'>The shortest Knight's path</a>.
 </p>
 
 <p>
     Your task is to write a function which can find all checkerboard cells on which Knight could go for. The input data will be start cell and the amount of moves that Knight will make. Board is absolutely empty except this one figure - your Knight.<br>
-If one cell appears more than 1 time - you should count it as much times as it appears.
+If one cell appears more than 1 time - do not append it more than once.
 You should return all possible cells in the list and sort them by the next rules:
 in alphabetical order (from 'a' to 'h') and in ascending order (from 'a1' to 'a8' and so on).
 </p>
@@ -32,11 +33,11 @@ in alphabetical order (from 'a' to 'h') and in ascending order (from 'a1' to 'a8
 </p>
 {% if interpreter.slug == "js-node" %}
 <pre class="brush: javascript">chessKnight('a1', 1) == ['b3', 'c2']
-chessKnight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+chessKnight('h8', 2) == ['d6', 'd8', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8']
 </pre>
 {% else %}
 <pre class="brush: python">chess_knight('a1', 1) == ['b3', 'c2']
-chess_knight('h8', 2) == ['d6', 'd8', 'e5', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8', 'h8']
+chess_knight('h8', 2) == ['d6', 'd8', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8']
 </pre>
 {% endif %}
 </div>
