@@ -1,0 +1,57 @@
+<p>
+    Ваш друг дуже любить шахи, але він не сильний гравець. Ви можете допомогти йому, використовуючи свої навички програмування. <br>
+    Якщо ця місія занадто проста для вас, спробуйте іншу з цього набору - 
+    <a href='https://py.checkio.org/en/mission/shortest-knight-path/'>The shortest Knight's path</a>.
+</p>
+
+<p>
+  Ваше завдання - написати функцію, яка може знайти всі клітини шахової дошки, до яких може перейти кінь.  
+  Вхідні дані будуть складатися із стартової комірки та кількості ходів, які зробить кінь.
+  На дошці є лише одна фігура - ваш кінь. <br> 
+  Якщо одна і та ж комірка з’являється не один раз - не додайте її знову.
+  Вам слід повернути список усіх можливих комірок і сортувати їх наступним чином:
+  в алфавітному порядку (від 'a' до 'h') та у порядку зростання (від 'a1' до 'a8' і тому подібне).
+</p>
+
+<p style="text-align: center;">
+    <img  title="Chess Knight" src="{{MEDIA}}knight.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Вхідні дані: </strong> Стартова комірка, кількість ходів.
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> Список всіх можливих клітинок. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Приклад:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">chessKnight('a1', 1) == ['b3', 'c2']
+chessKnight('h8', 2) == ['d6', 'd8', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8']
+</pre>
+{% else %}
+<pre class="brush: python">chess_knight('a1', 1) == ['b3', 'c2']
+chess_knight('h8', 2) == ['d6', 'd8', 'e5', 'e7', 'f4', 'f7', 'f8', 'g5', 'g6', 'h4', 'h6', 'h8']
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    Для аналізу ігор та розробки бота (ігри AI).
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Передумови</strong>:<br>
+    1 <= кількість ходів <= 2<br>
+</p>
