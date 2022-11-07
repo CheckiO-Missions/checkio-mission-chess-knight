@@ -2,14 +2,14 @@
 
 <p>
     Your friend loves chess very much, but he's not a strong player. You can help him by using your programming skills.<br>
-If this mission is too simple for you, try another one from this set - <a href='https://py.checkio.org/en/mission/shortest-knight-path/'>The shortest Knight's path</a>.
+    If this mission is too simple for you, try another one from this set - <a target="_blank" href='https://py.checkio.org/en/mission/shortest-knight-path/'>The shortest Knight's path</a>.
 </p>
 
 <p>
-    Your task is to write a function that can find all of the chessboard cells to which the Knight can move. The input data will consist of a start cell and the amount of moves that the Knight will make. There is only one figure on the board - your Knight.<br>
-If the same cell appears more than once - do not add it again.
-You should return the list of all of the possible cells and sort them as follows:
-in alphabetical order (from 'a' to 'h') and in ascending order (from 'a1' to 'a8' and so on).
+    There is only one figure on the board - your Knight. The input data will consist of a start cell and the maximum amount of moves that the Knight can make. Your task is to write a function that can find all of the chessboard cells to which the Knight can move at not more than maximum amount of moves (less is allowed). 
+</p>
+<p>
+    If the same cell appears more than once - do not add it again. To count cell as reached, you need to move there from another cell. So, you will add start cell to reached, if you may return there from some other cell. "Zero" move is not counted: initial being in start cell doesn't mean, that it's reached by moving. You should return the list of all of the possible cells and sort them as follows: in alphabetical order (from 'a' to 'h') and in ascending order (from 'a1' to 'a8' and so on).
 </p>
 
 <p style="text-align: center;">
